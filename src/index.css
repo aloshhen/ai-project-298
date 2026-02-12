@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Russian Flag Gradient Text */
+.text-rf-gradient {
+  background: linear-gradient(90deg, #FFFFFF 0%, #0033A0 50%, #DA291C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #DA291C;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0033A0;
+}
+
+/* Mobile Safe Areas */
+.telegram-safe-bottom {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+/* Pattern Background */
+.bg-russian-pattern {
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(218, 41, 28, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(0, 51, 160, 0.1) 0%, transparent 50%);
+}
